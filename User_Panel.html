@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Panel</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	a:link{
+		color: #701D40;
+		text-decoration: none;
+		font-size: 20px;
+		font-family: sans-serif;
+		font-size: 18px;
+	}
+	a:hover{
+		color: #db84db;
+	}
+
+	header{
+		position: fixed;
+		width: 100%;
+		height: 50px;
+	}
+	nav{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: fixed;
+		right: 15px;
+		width: 20%;
+		height: 50px;
+	}
+
+	#atf{
+		height: 100vh;
+		background-image: url("vtp.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		background-position: center;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-family: 'Monoton', cursive;
+		font-size: 50px;
+		color: white;
+		text-shadow: 2px 2px 1px grey;
+		transition: all 1s linear;
+	}
+
+		.dropbtn {
+	  background-color: transparent;
+	  color: #1c4661;
+	  padding: 16px;
+	  font-size: 16px;
+	  border: none;
+	  cursor: pointer;
+	  font-family: sans-serif;
+	  font-size: 18px;
+	}
+
+	.dropdown {
+	  position: relative;
+	  display: inline-block;
+	}
+
+	.dropdown-content {
+	  display: none;
+	  position: absolute;
+	  min-width: 160px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+	}
+
+	.dropdown-content a {
+	  color: black;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	}
+
+	.dropdown-content a:hover {
+		background-color: #f1f1f1;
+	}
+
+	.dropdown:hover .dropdown-content {
+	  display: block;
+	  background-color: white;
+	}
+
+	.dropdown:hover .dropbtn {
+	  background-color: #67aad6;
+	}
+
+	.center{
+		display: flex;
+		justify-content: center;
+		margin:20px;
+		padding: :20px;
+
+
+	}
+
+	.about{
+		opacity: 0.8;
+		width: 700px;
+		overflow: auto;
+		border-radius: 30px;
+		text-align: center;
+		color: black;
+	}
+	
+	.oyt{
+		padding:10px;
+		font-size: 25px;
+		font-weight: bold;
+		color: #0766a3;
+	}
+
+	.description{
+		padding:10px;
+		font-size: 20px;
+		background-color: #6c9dbd;
+		overflow: auto;
+		border-radius: 10px;
+	}
+
+	#style{
+		width: 1200px;
+		height: 2px;
+		margin: 20px auto;
+		background-color: grey;
+	}
+	.content{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 20px; 
+	}
+
+	img{
+		width: 180px;
+		height: 180px;
+	}
+
+	h2 {
+		text-align: center;
+		font-size: 25px;
+		font-weight: bold;
+		color: #0766a3;
+	}
+
+	h4{
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		border-radius: 40px;
+		color: white;
+		background-color: #67aad6;
+		width: 210px;
+		height: 50px;
+	}
+	section img{
+		width: 150px;
+		height: 150px;
+		margin: 30px 35px 0 35px;
+		border-radius: 20px;
+	}
+
+	#footer{
+		background-color: #67aad6;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 20px;
+		padding: 15px;
+		color: white;
+	}
+
+	a:link{
+	text-decoration: none;
+	color: #1c4661;
+}
+a:visited{
+	color: #1a699c;
+}
+</style>
+<body>
+	
+	<header>
+		<nav>
+		<div class="dropdown">
+  <button class="dropbtn">Members
+  	<i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content">
+    <a href="IT.html">IT</a>
+	<a href="acc.html">Mühasibatlıq</a>
+	<a href="hr.html">İnsan Resursları</a>
+	<a href="lp.html">Satınalma</a>
+  </div>
+</div>
+<a href="Login.html">Login</a>
+<a href="Signin.html">Sign-in</a>
+</nav>
+	</header>
+		<section>
+			<main>
+				<div id="atf"></div>
+			</main>
+		</section>
+
+		<section class="center">
+		<section class="about">
+		<div class="oyt">Özgün Yapı Haqqında</div>
+		<i class="fas fa-camera-retro"></i>
+		<p class="description">
+			“Özgün Yapı Sanayi ve Ticaret Anonim Şirketi” başda inşaat olmaqla, enerji, kənd təsərrüfatı, heyvandarlıq, sığorta və digər xidmət sektorlarında 11 şirkət və 10 minə yaxın işçisi ilə fəaliyyət göstərməktədir. Şirkətin Azərbaycan Respublikasındakı Filialı 2013-cü ildə qeydiyyata alınaraq öz fəaliyyətinə başlamışdır. Fəaliyyətə başladığımız ilk dövrdən şirkətimizin əsas hədəfi yol tikintisinin inkişafında böyük uğurlara nail olmaq olmuşdur. Əsasən yol və körpü tikintisi layihələrini həyata keçirən şirkətimiz əcnəbi və yerli mütəxəssislərin peşəkarlığı nəticəsində bu sahədə öz üslubu ilə fərqlənir. Bununla yanaşı komandamız sosial məsuliyyət prinsipi ilə çıxış edərək ilkin mərhələdə real təcrübə proqramlarına başlamış, pandemiya dövrü ilə əlaqədar olaraq yeni layihələri onlayn şəkildə təşkil etməyi qərara almışdır. Bunun üçün 2020-ci il 21 oktyabr-21 dekabr tarixləri aralığında "Virtual Təcrübə Proqramı" layihəsini həyata keçirmişdir. Daha sonra 2021-ci il üçün davamlı şəkildə virtual təcrübə proqramları keçirməyi hədəfləmişdir. Belə ki, ilin ilk rübündə, fevral və may ayları ərzində böyük maraqla qarşılanan VTP'21 Yaz Proqramını bitirmişdir. Yenilənmiş VTP'21 Yay Proqramı ilə qarşınızdadır.
+		</p></section></section>
+
+
+<section class="center">
+		<section class="about">
+		<div class="oyt">Virtual Təcrübə Proqramı Nədir?</div>
+		<p class="description">
+			Təcrübə Proqramının məqsədi gənclərə öz ixtisasları və ya digər sahələr üzrə təcrübə qazanmaq imkanı yaratmaq, gələcək kariyeralarında müvəffəqiyyətə nail olmalarını təmin edəcək bacarıqları və özgüvəni inkişaf etdirmələrinə yardım etmək, cəmiyyətdə ixtisaslı kadrların formalaşmasına dəstək olmaqdır.
+		</p></section></section>
+
+	
+		<div id="style"></div>
+	<h2>İştirakçılar haqqında məlumat</h2>
+	<section class="content">
+			<div><img src="human.png">
+			<h4>72 iştirakçı</h4></div>
+
+			<div><img src="maleavatarpng.png">
+			<h4>22 Kişi iştirakçı</h4></div>
+
+			<div><img src="femaleavatar.png">
+			<h4>50 Qadın iştirakçı</h4></div>
+			
+	</section>
+
+	<section class="content">
+		<div><img src="hr.png">
+		<h4>20 HR şöbəsi üzrə iştirakçı</h4></div>
+
+		<div><img src="accounting.png">
+		<h4>18 Mühasibatlıq şöbəsi üzrə iştirakçı</h4></div>
+
+		<div><img src="agreement.png">
+		<h4>15 Logistika və Satınalma şöbəsi üzrə iştirakçısı</h4></div>
+
+		<div><img src="it.png">
+		<h4>19 IT şöbəsi üzrə iştirakçısı</h4></div>
+	</section>
+
+	<footer>
+		<div id="footer">All rights reserved by Khayala Haziyeva &copy; 2021</div>
+	</footer>
+</body>
+</html>
